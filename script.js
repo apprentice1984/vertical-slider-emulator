@@ -19,3 +19,5 @@ function animateSlider() {
   bgContainer.style.transform = `translateY(-${100 * coef}%)`
   container.style.transform = `translateY(-${300 - 100 * coef}%)`
 }
+
+console.log('Script ran...');
