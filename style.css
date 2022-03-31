@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bgColor: #ffb866;
+  --bgGrey: #252e33;
+  --skyColor: #2a86ba;
+  --pinkColor: #fd3555;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+h2 {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+.container {
+  flex: 1;
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateY(-300%);
+}
+
+.textBox {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bgContainer {
+  flex: 2;
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  padding: 0.62rem;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10%;
+}
+
+button:focus {
+  outline: none;
+}
+
+.up {
+  position: absolute;
+  top: 50%;
+  left: calc(100% / 3);
+  transform: translateY(-75%);
+}
+
+.down {
+  position: absolute;
+  top: 50%;
+  right: calc(100% * 2 / 3);
+  transform: translateY(25%);
+}
